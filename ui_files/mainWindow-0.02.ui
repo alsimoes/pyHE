@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>684</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyHE - Controle de Horas Extras</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTreeView" name="arvoreMeses">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>156</width>
+      <height>356</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tabelaHorario">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>5</y>
+      <width>506</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>285</y>
+      <width>506</width>
+      <height>76</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>15</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Horas positivas: 00:00</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>40</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Horas negativas: 00:00</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total de horas: 00:00</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>15</y>
+       <width>216</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Horas para compensação: 00:00</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="mainMenuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>684</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionConfiguracoes"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <widget class="QMenu" name="menuPonto">
+    <property name="title">
+     <string>Ponto</string>
+    </property>
+    <addaction name="actionMarcaPonto"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdicionarHorarios"/>
+    <addaction name="actionEditarHorarios"/>
+    <addaction name="actionExcluirHorarios"/>
+    <addaction name="separator"/>
+    <addaction name="actionImportarHorarios"/>
+   </widget>
+   <widget class="QMenu" name="menuRelat_rios">
+    <property name="title">
+     <string>Relatórios</string>
+    </property>
+    <addaction name="actionRelatorioMes"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuPonto"/>
+   <addaction name="menuRelat_rios"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="mainStatusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAbrir"/>
+   <addaction name="separator"/>
+   <addaction name="actionMarcaPonto"/>
+   <addaction name="separator"/>
+   <addaction name="actionAdicionarHorarios"/>
+   <addaction name="actionEditarHorarios"/>
+   <addaction name="actionExcluirHorarios"/>
+   <addaction name="separator"/>
+   <addaction name="actionConfiguracoes"/>
+  </widget>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionConfiguracoes">
+   <property name="text">
+    <string>Configurações</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+,</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionMarcaPonto">
+   <property name="text">
+    <string>Marca ponto</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionAdicionarHorarios">
+   <property name="text">
+    <string>Adicionar horários</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionEditarHorarios">
+   <property name="text">
+    <string>Editar horários</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+H</string>
+   </property>
+  </action>
+  <action name="actionExcluirHorarios">
+   <property name="text">
+    <string>Excluir horários</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+X</string>
+   </property>
+  </action>
+  <action name="actionImportarHorarios">
+   <property name="text">
+    <string>Importar horários</string>
+   </property>
+  </action>
+  <action name="actionRelatorioMes">
+   <property name="text">
+    <string>Relatório do mês</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>arvoreMeses</tabstop>
+  <tabstop>tabelaHorario</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
