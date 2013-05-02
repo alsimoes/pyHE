@@ -1,0 +1,13 @@
+2013-04-30 01:00:17,900: main - INFO - main - main - 79 - Application started
+2013-04-30 01:00:22,533: main - INFO - main - fechar_app - 62 - Application finished
+2013-04-30 01:01:35,325: PyHE - INFO - main - main - 79 - Application started
+2013-04-30 01:01:39,637: PyHE - INFO - main - fechar_app - 62 - Application finished
+2013-04-30 01:04:16,587: PyHE - INFO - main - <module> - 38 - : APPLICATION_PATH/Users/andresimoes/Dropbox/workspace/pyHE/source/pyHE1
+2013-04-30 01:04:16,587: PyHE - INFO - main - main - 70 - Application started.
+2013-04-30 01:04:23,753: PyHE - WARNING - main - fechar_app - 61 - Application finished wrong way.
+2013-04-30 01:05:45,397: PyHE - INFO - main - <module> - 38 - APPLICATION_PATH: /Users/andresimoes/Dropbox/workspace/pyHE/source/pyHE1
+2013-04-30 01:05:45,397: PyHE - INFO - main - main - 70 - Application started.
+2013-04-30 01:05:51,862: PyHE - WARNING - main - fechar_app - 61 - Application finished wrong way.
+2013-04-30 01:09:08,129: PyHE - INFO - main - <module> - 38 - APPLICATION_PATH: /Users/andresimoes/Dropbox/workspace/pyHE/source/pyHE1
+2013-04-30 01:09:08,130: PyHE - INFO - main - main - 70 - Application started.
+2013-04-30 01:09:12,650: PyHE - INFO - main - fechar_app - 61 - Application finished wrong way.
