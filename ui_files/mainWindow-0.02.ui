@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>684</width>
-    <height>437</height>
+    <width>682</width>
+    <height>469</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -105,7 +105,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>684</width>
+     <width>682</width>
      <height>22</height>
     </rect>
    </property>
@@ -161,6 +161,9 @@
    <property name="movable">
     <bool>false</bool>
    </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
@@ -178,6 +181,10 @@
    <addaction name="actionConfiguracoes"/>
   </widget>
   <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_144_folder_open@2x.png</normaloff>:/icons/glyphicons_144_folder_open@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Abrir</string>
    </property>
@@ -186,6 +193,10 @@
    </property>
   </action>
   <action name="actionSair">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_063_power@2x.png</normaloff>:/icons/glyphicons_063_power@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Sair</string>
    </property>
@@ -194,6 +205,10 @@
    </property>
   </action>
   <action name="actionConfiguracoes">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_023_cogwheels@2x.png</normaloff>:/icons/glyphicons_023_cogwheels@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Configurações</string>
    </property>
@@ -202,11 +217,19 @@
    </property>
   </action>
   <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_195_circle_info@2x.png</normaloff>:/icons/glyphicons_195_circle_info@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Sobre</string>
    </property>
   </action>
   <action name="actionMarcaPonto">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_055_stopwatch@2x.png</normaloff>:/icons/glyphicons_055_stopwatch@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Marca ponto</string>
    </property>
@@ -215,6 +238,10 @@
    </property>
   </action>
   <action name="actionAdicionarHorarios">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_054_clock@2x.png</normaloff>:/icons/glyphicons_054_clock@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Adicionar horários</string>
    </property>
@@ -223,6 +250,10 @@
    </property>
   </action>
   <action name="actionEditarHorarios">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_053_alarm@2x.png</normaloff>:/icons/glyphicons_053_alarm@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Editar horários</string>
    </property>
@@ -231,6 +262,10 @@
    </property>
   </action>
   <action name="actionExcluirHorarios">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_057_history@2x.png</normaloff>:/icons/glyphicons_057_history@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Excluir horários</string>
    </property>
@@ -239,11 +274,19 @@
    </property>
   </action>
   <action name="actionImportarHorarios">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_358_file_import@2x.png</normaloff>:/icons/glyphicons_358_file_import@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Importar horários</string>
    </property>
   </action>
   <action name="actionRelatorioMes">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/glyphicons_040_stats@2x.png</normaloff>:/icons/glyphicons_040_stats@2x.png</iconset>
+   </property>
    <property name="text">
     <string>Relatório do mês</string>
    </property>
@@ -253,6 +296,8 @@
   <tabstop>arvoreMeses</tabstop>
   <tabstop>tabelaHorario</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
