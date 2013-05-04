@@ -162,7 +162,7 @@
     <addaction name="actionEditarHorarios"/>
     <addaction name="actionExcluirHorarios"/>
     <addaction name="separator"/>
-    <addaction name="actionImportarHorarios"/>
+    <addaction name="actionImportarArquivo"/>
    </widget>
    <widget class="QMenu" name="menuRelat_rios">
     <property name="title">
@@ -211,6 +211,12 @@
    <property name="text">
     <string>Abrir</string>
    </property>
+   <property name="toolTip">
+    <string>Abrir o arquivo da base de dados</string>
+   </property>
+   <property name="statusTip">
+    <string>Abrir o arquivo da base de dados.</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
    </property>
@@ -222,6 +228,12 @@
    </property>
    <property name="text">
     <string>Sair</string>
+   </property>
+   <property name="toolTip">
+    <string>Sair do aplicativo</string>
+   </property>
+   <property name="statusTip">
+    <string>Sair do aplicativo.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
@@ -235,6 +247,12 @@
    <property name="text">
     <string>Configurações</string>
    </property>
+   <property name="toolTip">
+    <string>Abrir diálogo de configurações</string>
+   </property>
+   <property name="statusTip">
+    <string>Abrir diálogo de configurações.</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+,</string>
    </property>
@@ -247,6 +265,12 @@
    <property name="text">
     <string>Sobre</string>
    </property>
+   <property name="toolTip">
+    <string>Sobre o aplicativo</string>
+   </property>
+   <property name="statusTip">
+    <string>Sobre o aplicativo.</string>
+   </property>
   </action>
   <action name="actionMarcaPonto">
    <property name="icon">
@@ -254,10 +278,16 @@
      <normaloff>:/icons/glyphicons_323_cartao-de-ponto@2x.png</normaloff>:/icons/glyphicons_323_cartao-de-ponto@2x.png</iconset>
    </property>
    <property name="text">
-    <string>Marca ponto</string>
+    <string>Marca Ponto</string>
+   </property>
+   <property name="toolTip">
+    <string>Adiciona o horário atual como marcação de ponto</string>
+   </property>
+   <property name="statusTip">
+    <string>Adiciona o horário atual como marcação de ponto.</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+P</string>
+    <string>Meta+Ctrl+P</string>
    </property>
   </action>
   <action name="actionAdicionarHorarios">
@@ -266,10 +296,16 @@
      <normaloff>:/icons/glyphicons_090_custom-table-plus@2x.png</normaloff>:/icons/glyphicons_090_custom-table-plus@2x.png</iconset>
    </property>
    <property name="text">
-    <string>Adicionar horários</string>
+    <string>Adicionar</string>
+   </property>
+   <property name="toolTip">
+    <string>Abre diálogo de adição do dia selecionado</string>
+   </property>
+   <property name="statusTip">
+    <string>Abre diálogo de adição do dia selecionado.</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+H</string>
+    <string>Meta+Ctrl+H</string>
    </property>
   </action>
   <action name="actionEditarHorarios">
@@ -278,10 +314,16 @@
      <normaloff>:/icons/glyphicons_090_custom-table-edit@2x.png</normaloff>:/icons/glyphicons_090_custom-table-edit@2x.png</iconset>
    </property>
    <property name="text">
-    <string>Editar horários</string>
+    <string>Editar</string>
+   </property>
+   <property name="toolTip">
+    <string>Abre diálogo de edição do dia selecionado</string>
+   </property>
+   <property name="statusTip">
+    <string>Abre diálogo de edição do dia selecionado.</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Shift+H</string>
+    <string>Meta+Ctrl+J</string>
    </property>
   </action>
   <action name="actionExcluirHorarios">
@@ -290,19 +332,31 @@
      <normaloff>:/icons/glyphicons_090_custom-table-minus@2x.png</normaloff>:/icons/glyphicons_090_custom-table-minus@2x.png</iconset>
    </property>
    <property name="text">
-    <string>Excluir horários</string>
+    <string>Excluir</string>
+   </property>
+   <property name="toolTip">
+    <string>Abre diálogo de exclusão do dia selecionado</string>
+   </property>
+   <property name="statusTip">
+    <string>Abre diálogo de exclusão do dia selecionado.</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Shift+X</string>
+    <string>Meta+Ctrl+J</string>
    </property>
   </action>
-  <action name="actionImportarHorarios">
+  <action name="actionImportarArquivo">
    <property name="icon">
     <iconset resource="icons.qrc">
      <normaloff>:/icons/glyphicons_358_file_import@2x.png</normaloff>:/icons/glyphicons_358_file_import@2x.png</iconset>
    </property>
    <property name="text">
-    <string>Importar horários</string>
+    <string>Importar arquivo</string>
+   </property>
+   <property name="toolTip">
+    <string>Abre diálogo de seleção de arquivo para importação</string>
+   </property>
+   <property name="statusTip">
+    <string>Abre diálogo de seleção de arquivo para importação.</string>
    </property>
   </action>
   <action name="actionRelatorioMes">
@@ -312,6 +366,12 @@
    </property>
    <property name="text">
     <string>Relatório do mês</string>
+   </property>
+   <property name="toolTip">
+    <string>Gera relatório do mês selecionado</string>
+   </property>
+   <property name="statusTip">
+    <string>Gera relatório do mês selecionado.</string>
    </property>
   </action>
  </widget>

@@ -3,7 +3,7 @@
 
 __appname__ = "PyHE"
 __module__ = "main"
-__version__ = "1.0"
+__version__ = "0.1"
 __build__ = "0001"
 __autor__ = u"André Simões"
 __organization__ = u"André Simões"
@@ -66,15 +66,98 @@ class Main(QMainWindow, mainWindowGui.Ui_mainWindow):
         SIGNALS Connections
         """
         self.actionSair.triggered.connect(self.fechar_app)
+        self.actionAbrir.triggered.connect(self.abre_arquivo)
+        self.actionMarcaPonto.triggered.connect(self.marca_ponto)
+        self.actionAdicionarHorarios.triggered.connect(self.adicionar_horario)
+        self.actionEditarHorarios.triggered.connect(self.editar_horario)
+        self.actionExcluirHorarios.triggered.connect(self.excluir_horario)
+        self.actionConfiguracoes.triggered.connect(self.configuracoes)
+        self.actionRelatorioMes.triggered.connect(self.gera_relario)
+        self.actionImportarArquivo.triggered.connect(self.importar_arquivo)
         self.actionSobre.triggered.connect(self.sobre)
+
+    def abre_arquivo(self):
+        """
+        Abre o diálogo para seleção do arquivo da base de dados.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Abre o diálogo para seleção do arquivo da base de dados.
+        """)
+
+    def marca_ponto(self):
+        """
+        Obtem a hora e minutos atuais e inclui o horário
+        na próxima marcação de horário livre do dia.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Obtem a hora e minutos atuais e inclui o horário
+        na próxima marcação de horário livre do dia.
+        """)
+
+    def adicionar_horario(self):
+        """
+        Abre o diálogo para adição dos horário do dia.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Abre o diálogo para adição dos horário do dia.
+        """)
+
+    def editar_horario(self):
+        """
+        Abre o diálogo edição dos horário do dia.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Abre o diálogo edição dos horário do dia.
+        """)
+
+    def excluir_horario(self):
+        """
+        Abre o diálogo para exclusão dos horário do dia.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Abre o diálogo para exclusão dos horário do dia.
+        """)
+
+    def configuracoes(self):
+        """
+        Abre o diálogo das configurações gerais do sistema.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Abre o diálogo das configurações gerais do sistema.
+        """)
+
+    def gera_relario(self):
+        """
+        Gera o relatório do mês selecionado na tela principal.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Gera o relatório do mês selecionado na tela principal.
+        """)
+
+    def importar_arquivo(self):
+        """
+        Abre diálogo de seleção de arquivo para importção.
+        """
+        QMessageBox.information(self, __appname__, u"""
+        Abre diálogo de seleção de arquivo para importção.
+        """)
+
+
 
 
     def sobre(self):
         """
-        Abre o tela sobre.
+        Abre o Diálogo Sobre.
         """
-        dialog = Sobre()
-        dialog.exec_()
+        texto_sobre = u'''<font size=13>{0}</font><br/>Versão {1} ({2})<br/><br/>
+                          <a href="{3}">{3}</a><br/><br/>{4}, {5}.'''.format(
+                            __appname__,
+                            __version__,
+                            __build__,
+                            __domain__,
+                            __copyright__,
+                            __autor__)
+        QMessageBox.about(self, "Sobre", texto_sobre)
 
     def marca_ponto(self):
         pass
@@ -90,32 +173,6 @@ class Main(QMainWindow, mainWindowGui.Ui_mainWindow):
             logger.Exception("I/O error({0}): {1}".format(e.errno, e.strerror))
 
 
-class Sobre(QDialog):
-
-    def __init__ (self, parent=None):
-        super(Sobre, self).__init__(parent)
-
-        self.setWindowTitle("Sobre")
-        self.setSizeGripEnabled(False)
-
-
-        self.nome_app = QLabel("".join(["<font size=14>", __appname__, "</font>"]), self)
-        self.versao = QLabel("".join([u"Versão ", __version__, " (", __build__, ")"]), self)
-        self.link = QLabel("".join(['<a href="', __domain__, '">', __domain__[7:], "</a>"]), self)
-        self.licenca = QLabel("".join([__copyright__,", ",__autor__, "."]), self)
-
-        self.link.linkActivated.connect(self.abre_link)
-
-        self.layout = QVBoxLayout()
-        self.layout.addWidget(self.nome_app)
-        self.layout.addWidget(self.versao)
-        self.layout.addWidget(self.link)
-        self.layout.addWidget(self.licenca)
-        self.setLayout(self.layout)
-
-    def abre_link(self):
-        QDesktopServices.openUrl(QUrl(__domain__))
-
 def main():
     logger.info("Application started.")
     QCoreApplication.setApplicationName(__appname__)
@@ -130,11 +187,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-"""
-## TODO - Lista das coisas que precisa ser programadas:
-
-[ ] Definir um tamanho para as janelas.
-
-"""
