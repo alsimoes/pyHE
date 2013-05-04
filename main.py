@@ -96,6 +96,8 @@ class Sobre(QDialog):
         super(Sobre, self).__init__(parent)
 
         self.setWindowTitle("Sobre")
+        self.setSizeGripEnabled(False)
+
 
         self.nome_app = QLabel("".join(["<font size=14>", __appname__, "</font>"]), self)
         self.versao = QLabel("".join([u"Versão ", __version__, " (", __build__, ")"]), self)

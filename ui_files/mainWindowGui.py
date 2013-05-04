@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'mainWindow-0.02.ui'
 #
-# Created: Fri May  3 01:31:04 2013
+# Created: Fri May  3 22:56:48 2013
 #      by: pyside-uic 0.2.13 running on PySide 1.1.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -106,22 +106,22 @@ class Ui_mainWindow(object):
         self.actionSobre.setObjectName("actionSobre")
         self.actionMarcaPonto = QtGui.QAction(mainWindow)
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/icons/glyphicons_055_stopwatch@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap(":/icons/glyphicons_323_cartao-de-ponto@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionMarcaPonto.setIcon(icon4)
         self.actionMarcaPonto.setObjectName("actionMarcaPonto")
         self.actionAdicionarHorarios = QtGui.QAction(mainWindow)
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/icons/glyphicons_054_clock@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap(":/icons/glyphicons_090_custom-table-plus@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionAdicionarHorarios.setIcon(icon5)
         self.actionAdicionarHorarios.setObjectName("actionAdicionarHorarios")
         self.actionEditarHorarios = QtGui.QAction(mainWindow)
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/icons/glyphicons_053_alarm@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap(":/icons/glyphicons_090_custom-table-edit@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionEditarHorarios.setIcon(icon6)
         self.actionEditarHorarios.setObjectName("actionEditarHorarios")
         self.actionExcluirHorarios = QtGui.QAction(mainWindow)
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/icons/glyphicons_057_history@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap(":/icons/glyphicons_090_custom-table-minus@2x.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionExcluirHorarios.setIcon(icon7)
         self.actionExcluirHorarios.setObjectName("actionExcluirHorarios")
         self.actionImportarHorarios = QtGui.QAction(mainWindow)

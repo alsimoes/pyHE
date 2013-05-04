@@ -119,7 +119,6 @@
       <zorder>label_2</zorder>
       <zorder>label_3</zorder>
       <zorder>label_4</zorder>
-      <zorder>tabelaHorario</zorder>
      </widget>
     </item>
    </layout>
@@ -252,7 +251,7 @@
   <action name="actionMarcaPonto">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons/glyphicons_055_stopwatch@2x.png</normaloff>:/icons/glyphicons_055_stopwatch@2x.png</iconset>
+     <normaloff>:/icons/glyphicons_323_cartao-de-ponto@2x.png</normaloff>:/icons/glyphicons_323_cartao-de-ponto@2x.png</iconset>
    </property>
    <property name="text">
     <string>Marca ponto</string>
@@ -264,7 +263,7 @@
   <action name="actionAdicionarHorarios">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons/glyphicons_054_clock@2x.png</normaloff>:/icons/glyphicons_054_clock@2x.png</iconset>
+     <normaloff>:/icons/glyphicons_090_custom-table-plus@2x.png</normaloff>:/icons/glyphicons_090_custom-table-plus@2x.png</iconset>
    </property>
    <property name="text">
     <string>Adicionar horários</string>
@@ -276,7 +275,7 @@
   <action name="actionEditarHorarios">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons/glyphicons_053_alarm@2x.png</normaloff>:/icons/glyphicons_053_alarm@2x.png</iconset>
+     <normaloff>:/icons/glyphicons_090_custom-table-edit@2x.png</normaloff>:/icons/glyphicons_090_custom-table-edit@2x.png</iconset>
    </property>
    <property name="text">
     <string>Editar horários</string>
@@ -288,7 +287,7 @@
   <action name="actionExcluirHorarios">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons/glyphicons_057_history@2x.png</normaloff>:/icons/glyphicons_057_history@2x.png</iconset>
+     <normaloff>:/icons/glyphicons_090_custom-table-minus@2x.png</normaloff>:/icons/glyphicons_090_custom-table-minus@2x.png</iconset>
    </property>
    <property name="text">
     <string>Excluir horários</string>

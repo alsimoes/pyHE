@@ -2,18 +2,14 @@
  <qresource>
      <file>icons/glyphicons_023_cogwheels@2x.png</file>
      <file>icons/glyphicons_040_stats@2x.png</file>
-     <file>icons/glyphicons_042_pie_chart@2x.png</file>
-     <file>icons/glyphicons_053_alarm@2x.png</file>
-     <file>icons/glyphicons_054_clock@2x.png</file>
-     <file>icons/glyphicons_055_stopwatch@2x.png</file>
-     <file>icons/glyphicons_057_history@2x.png</file>
      <file>icons/glyphicons_063_power@2x.png</file>
+     <file>icons/glyphicons_090_custom-table-edit@2x.png</file>
+     <file>icons/glyphicons_090_custom-table-minus@2x.png</file>
+     <file>icons/glyphicons_090_custom-table-plus@2x.png</file>
      <file>icons/glyphicons_144_folder_open@2x.png</file>
      <file>icons/glyphicons_194_circle_question_mark@2x.png</file>
      <file>icons/glyphicons_195_circle_info@2x.png</file>
-     <file>icons/glyphicons_323_calculator@2x.png</file>
-     <file>icons/glyphicons_331_dashboard@2x.png</file>
-     <file>icons/glyphicons_352_nameplate@2x.png</file>
+     <file>icons/glyphicons_323_cartao-de-ponto@2x.png</file>
      <file>icons/glyphicons_358_file_import@2x.png</file>
  </qresource>
  </RCC>
