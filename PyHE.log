@@ -160,3 +160,4 @@
 2013-05-21 01:37:01,762 PyHE ERROR main __init__ 98 global name 'sqlCmd' is not defined
 2013-06-30 04:53:50,631 PyHE ERROR main __init__ 98 global name 'sqlCmd' is not defined
 2013-06-30 14:22:58,632 PyHE ERROR main __init__ 98 global name 'sqlCmd' is not defined
+2013-07-15 08:27:52,235 PyHE ERROR main __init__ 98 global name 'sqlCmd' is not defined
