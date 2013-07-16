@@ -1,6 +1,7 @@
 # pyHE
 Aplicativo multiplataforma simples para cálculo de horas extras para banco de horas. Desenvolvido em [Python](http://www.python.org/) com o framework [PySide](http://qt-project.org/wiki/PySide) que utiliza a biblioteca [Qt](http://qt.digia.com/) para design da interface gráfica. É compatível com os sistemas Windows, Linux e OSX.
 
+![pyHE main screen](https://dl.dropboxusercontent.com/u/770967/outros/PyHE.6.MacOSX.png "pyHE main screen")
 
 ## Características
 * Armazena marcações de horários.
