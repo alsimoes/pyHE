@@ -13,7 +13,8 @@ Aplicativo multiplataforma simples para cálculo de horas extras para banco de h
 * Marcação rápida do horário atual.
 * Importação de arquivo CSV.
 
-[![Stories in Ready](https://badge.waffle.io/alsimoes/pyHE.png)](http://waffle.io/alsimoes/pyHE)
+## Andamento
+waffle.io: [![Stories in Ready](https://badge.waffle.io/alsimoes/pyHE.png)](http://waffle.io/alsimoes/pyHE)
 
 ## Atualizações
 ### 0.01 (alpha)
