@@ -1,7 +1,7 @@
 # pyHE
 Aplicativo multiplataforma simples para cálculo de horas extras para banco de horas. Desenvolvido em [Python](http://www.python.org/) com o framework [PySide](http://qt-project.org/wiki/PySide) que utiliza a biblioteca [Qt](http://qt.digia.com/) para design da interface gráfica. É compatível com os sistemas Windows, Linux e OSX.
 
-![pyHE main screen](https://dl.dropboxusercontent.com/u/770967/outros/PyHE.6.MacOSX.png "pyHE main screen")
+![pyHE main screen](https://dl.dropboxusercontent.com/u/770967/pyHE/sshot.png "pyHE main screen")
 
 ## Características
 * Armazena marcações de horários.
@@ -13,11 +13,22 @@ Aplicativo multiplataforma simples para cálculo de horas extras para banco de h
 * Marcação rápida do horário atual.
 * Importação de arquivo CSV.
 
+[![Stories in Ready](https://badge.waffle.io/alsimoes/pyHE.png)](http://waffle.io/alsimoes/pyHE)
 
-## Dados técnicos
-* Autor: [André Simões](https://github.com/alsimoes)
-* Linguagem: [Python](http://www.python.org/)
-* Interface de usuário: [Qt](http://qt.digia.com/)
-* Framework: [PySide](http://qt-project.org/wiki/PySide)
-* Licença: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html)
-* Plataformas: Windows, Linux e OSX.
+## Atualizações
+### 0.01 (alpha)
+* Design da interface principal;
+* Geração de arquivo de *log*;
+
+## Informações técnicas e Copyrigth
+Autor: André Simões ([GitHub](https://github.com/alsimoes), [Twitter] (http://twitter.com/alsimoes))
+
+Linguagem: [Python](http://www.python.org/)
+
+Frameworks e Bibliotecas:
+* [Qt](http://qt.digia.com/)
+* [PySide](http://qt-project.org/wiki/PySide)
+
+Licença: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html)
+
+Plataformas: Windows, Linux e OSX.
