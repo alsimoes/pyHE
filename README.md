@@ -1,5 +1,4 @@
 # pyHE
-------
 Aplicativo multiplataforma para cálculo de horas extras para banco de horas. Desenvolvido em [Python](http://www.python.org/) com o *framework* [PySide](http://qt-project.org/wiki/PySide) que utiliza a biblioteca [Qt](http://qt.digia.com/) para design da *interface* gráfica. É compatível com os sistemas Windows, Linux e OSX.
 
 #### Características
@@ -32,7 +31,7 @@ Plataformas: Windows, Linux e OSX.
 ----
 
 ## Atualizações
-#### [Waffle.io](http://waffle.io/alsimoes/pyHE "Kanban board") &rarr; [![Stories in Ready](https://badge.waffle.io/alsimoes/pyHE.png "Kanban board")](http://waffle.io/alsimoes/pyHE)
+#### [Waffle.io](http://waffle.io/alsimoes/pyHE?label=ready "Kanban board") &rarr; [![Stories in Ready](https://badge.waffle.io/alsimoes/pyHE.png "Kanban board")](http://waffle.io/alsimoes/pyHE)
 
 #### 0.01 (alpha)
 * Design da interface principal;
